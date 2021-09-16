@@ -42,7 +42,7 @@ public class HelloApplication extends Application {
         System.out.println("Welcome to Random Face Generator");
         System.out.println("How many faces will we be generating today?: ");
         int userInput = scanner.nextInt();
-        System.out.println("Please wait while we generate the faces for you");
+        System.out.println("Please wait while we generate " + applyFaceToNumber(userInput) + " faces for you");
 
 
 
@@ -58,6 +58,13 @@ public class HelloApplication extends Application {
         timeline.setCycleCount(userInput);
         timeline.play();
 
+    }
+    //This method takes the number the user inputs and puts a smiley face after the number
+    public static String applyFaceToNumber(int numOfFaces) {
+
+        String applyFaceToNum = numOfFaces + " 😊";
+
+        return applyFaceToNum;
     }
 
     public static void drawPrimitiveFace() {
