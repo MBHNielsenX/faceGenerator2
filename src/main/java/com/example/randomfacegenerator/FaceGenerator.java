@@ -17,7 +17,7 @@ import javafx.util.Duration;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class FaceGenerator extends Application {
     static int width = 600;
     static int height = 600;
     static Canvas canvas = new Canvas(width, height);
@@ -28,7 +28,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         Scanner scanner = new Scanner(System.in);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(FaceGenerator.class.getResource("hello-view.fxml"));
 
         Group root = new Group();
         Scene scene = new Scene(root, width, height);
