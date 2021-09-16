@@ -129,16 +129,19 @@ public class HelloApplication extends Application {
         if (numberEyes == 0) {
             gc.fillOval(220,220,20,20);
             gc.fillOval(360,220,20,20);
+
         } else if (numberEyes == 1) {
             gc.strokeOval(230,230,50,30);
             gc.strokeOval(330,210,50,30);
             gc.fillOval(245,235,20,20);
             gc.fillOval(345,215,20,20);
+
         } else if (numberEyes == 2) {
             gc.strokeArc(210,225,50,30,0,-180,ArcType.CHORD);
             gc.strokeArc(330,220,50,30,0,-180,ArcType.CHORD);
             gc.strokeOval(230,240,18,15);
             gc.strokeOval(350,235,18,15);
+
         } else {
             gc.strokeArc(210,225,50,30,10,-170,ArcType.CHORD);
             gc.strokeArc(330,220,50,30,10,-170,ArcType.CHORD);
@@ -159,18 +162,22 @@ public class HelloApplication extends Application {
         //In this if function I used polygons to draw the nose. The polygon can intake infinite amounts of points as
         //long as there is an equal amount of x and y points and that the points displayed is equal to the sum of
         //x points and y points
+
         if (numberNose == 0) {
             double[] xPoints = {290,310,300};
             double[] yPoints = {280,280,270};
             gc.strokePolygon(xPoints , yPoints , 3);
+
         } else if (numberNose == 1) {
             double[] xPoints2 = {290,290,285,280,285,290,300,305,310,305,300,300};
             double[] yPoints2 = {270,290,292,294,296,298,298,296,294,292,290,270};
             gc.strokePolygon(xPoints2, yPoints2 , 12);
+
         } else if (numberNose == 2) {
             double[] xPoints3 = {295,295,290,285,285,290,295,305,310,315,315,310,305,305};
             double[] yPoints3 = {265,285,287,291,293,295,297,297,295,293,291,289,287,267};
             gc.strokePolygon(xPoints3,yPoints3,14);
+
         } else {
             double[] xPoints = {280,310,310};
             double[] yPoints = {280,300,270};
